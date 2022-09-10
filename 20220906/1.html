@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    function Fn1(name){
+        if (name){
+            this.name = name ;
+        }
+    }
+
+    Fn1.prototype.name = "jack"
+    let a  = new Fn1() ;
+    console.log('a:', a.name)
+    function Fn2(name){
+        this.name = name ;
+    }
+
+    Fn2.prototype.name = "jack"
+    let b = new Fn2() ;
+    console.log('b:', b.name)
+</script>
+<body>
+
+</body>
+</html>
